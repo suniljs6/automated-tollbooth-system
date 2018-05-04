@@ -1,0 +1,1 @@
+r = requests.post('http://127.0.0.1:8000/values/data/', json={'name': 'devil', 'tname': 'Ongole','vehicle':'four_wheeler'}, headers={'Content-type': 'application/json', 'Accept': 'application/json'})

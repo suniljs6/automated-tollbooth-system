@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TOLL PLAZA Registration</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="header">
+  	<h2>Register</h2>
+  </div>
+	
+  <form method="post" action="register.php">
+  	<?php include('errors.php'); ?>
+  	<div class="input-group">
+  	  <label>Username</label>
+  	  <input type="text" name="username" >
+  	</div>
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" name="password_1">
+  	</div>
+  	<!--<div class="input-group">
+  	  <label>Type of vehicle</label>
+<select name="type_vehicle">
+  <option value="b">b</option>
+  <option value="a">a</option>
+</select>  	</div>-->
+	<div class="input-group">
+  	  <label>id</label>
+  	  <input type="password" name="id">
+  	</div>
+	<!--<div class="input-group">
+  	  <label>Type of user</label>
+<select name="type_user">
+  <option value="daily">daily</option>
+  <option value="random">random</option>
+</select> 
+ 	</div>-->
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user">Register</button>
+  	</div>
+	<div class="input-group">
+  	  <button type="submit" class="btn" name="back">Back</button>
+  	</div>
+  	
+  </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% if data %}
+	<table style="float:left">
+	<thead>
+        <tr>
+          <th >User</th>
+          <th >amount_paid</th>
+	  <th >time_stamp</th>
+        </tr>
+      </thead>
+      <tbody>
+	{% for i in data %}
+		<tr>
+		<td>{{ i.uid }}</td>
+		<td>{{ i.amount_paid }}</td>
+		<td>{{i.time_stamp}}</td>
+		</tr>
+	{% endfor %}
+       </tbody>
+	</table>
+{%else%}
+	<p>"No data to show"</p>
+{% endif %}
